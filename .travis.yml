@@ -5,8 +5,8 @@ services:
 
 before_install:
   - docker info
-  - docker build -t mar-kub/docker-gitlab-ci-multi-runner-c-cpp .
+  - docker build -t mar-kub/docker-c-cpp-build .
 
 script:
-  - docker run -it mar-kub/docker-gitlab-ci-multi-runner-c-cpp gcc -v
-  - docker run -it mar-kub/docker-gitlab-ci-multi-runner-c-cpp g++ -v
+  - docker run -it mar-kub/docker-c-cpp-build gcc -v
+  - docker run -it mar-kub/docker-c-cpp-build g++ -v
