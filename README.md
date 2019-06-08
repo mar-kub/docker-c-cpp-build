@@ -3,16 +3,16 @@
 Docker image (C / C++)
 
 ## Builds
-master: [![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?branch=master)](https://travis-ci.org/mar-kub/docker-c-cpp-build)<br />
+gcc4: [![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?branch=gcc4)](https://travis-ci.org/mar-kub/docker-c-cpp-build)<br />
 
 # Contains #
 
-## master ##
+## gcc4 ##
 
--   gcc6
--   g++6
+-   gcc4
+-   g++4
 -   git
--   cmake (3.7)
+-   cmake (3.0)
 -   mlocate
 -   unzip
 -   ruby

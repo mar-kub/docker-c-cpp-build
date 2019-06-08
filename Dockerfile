@@ -1,4 +1,4 @@
-FROM buildpack-deps:stretch
+FROM buildpack-deps:jessie
 MAINTAINER markus@kubertzki.de
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpcl-dev \
     libproj-dev \
     libprotobuf-dev \
-    libqglviewer-headers \
+    libqglviewer-dev \
     libsuitesparse-dev \
     libtclap-dev \
     libtinyxml-dev \
