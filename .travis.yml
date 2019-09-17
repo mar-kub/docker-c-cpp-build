@@ -5,8 +5,6 @@ services:
   - docker
 
 env:
-  - VERSION=latest
-  - VERSION=min
   - VERSION=gcc8
   - VERSION=min8
   - VERSION=gcc6

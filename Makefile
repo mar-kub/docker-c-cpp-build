@@ -5,7 +5,7 @@ GITDIR = mar-kub/docker-c-cpp-build
 all: build
 
 build:
-	@docker build -t $(GITDIR) latest
+	@docker build -t $(GITDIR) gcc8
 
 gcc8:
 	@docker build -t $(GITDIR) gcc8
