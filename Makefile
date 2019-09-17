@@ -1,12 +1,17 @@
-GITDIR = mar-kub/gitlab-ci-multi-runner-c-cpp
-VERSION = 0.1.0
+GITDIR = mar-kub/docker-c-cpp-build
 
-.PHONY: all build release
+.PHONY: all build
 
 all: build
 
 build:
-	@docker build --tag=$(GITDIR):latest .
+	@docker build -t $(GITDIR) latest
 
-release: build
-	@docker build --tag=$(GITDIR):$(VERSION) .
+gcc8:
+	@docker build -t $(GITDIR) gcc8
+
+gcc6:
+	@docker build -t $(GITDIR) gcc6
+
+gcc4:
+	@docker build -t $(GITDIR) gcc4

@@ -1,10 +1,22 @@
-sudo: required
+language: bash
+services: docker
 
 services:
   - docker
 
+env:
+  - VERSION=latest
+  - VERSION=min
+  - VERSION=gcc8
+  - VERSION=min8
+  - VERSION=gcc6
+  - VERSION=min6
+  - VERSION=gcc4
+  - VERSION=min4
+
 before_install:
   - docker info
+  - cd "$VERSION"
   - docker build -t mar-kub/docker-c-cpp-build .
 
 script:
