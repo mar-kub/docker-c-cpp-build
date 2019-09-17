@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     git \
     g++ \
-    libatlas-dev \
     libatlas-base-dev \
     libboost-all-dev \
     libblas-dev \
@@ -27,7 +26,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpcl-dev \
     libproj-dev \
     libprotobuf-dev \
-    libqglviewer-dev \
+    libqglviewer-dev-qt4 \
+    libqglviewer-dev-qt5 \
     libsuitesparse-dev \
     libtclap-dev \
     libtinyxml-dev \

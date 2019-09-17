@@ -7,12 +7,12 @@ gcc4: [![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?bran
 
 # Contains #
 
-## gcc4 ##
+## gcc8 ##
 
--   gcc4
--   g++4
+-   gcc8
+-   g++8
 -   git
--   cmake (3.0)
+-   cmake (3.13)
 -   mlocate
 -   unzip
 -   ruby
