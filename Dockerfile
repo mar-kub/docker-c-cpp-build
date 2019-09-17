@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM buildpack-deps:buster
 MAINTAINER markus@kubertzki.de
 
 ENV DEBIAN_FRONTEND noninteractive
