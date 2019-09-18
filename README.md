@@ -4,7 +4,7 @@ Docker image (C / C++)
 
 ## Builds
 
-[![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?branch=master)](https://travis-ci.org/mar-kub/docker-c-cpp-build)<br />
+[![Build Status](https://travis-ci.com/mar-kub/docker-c-cpp-build.svg?branch=master)](https://travis-ci.com/mar-kub/docker-c-cpp-build)<br />
 
 | Tag    | GCC/G++ | CMAKE | OS               |
 |:------ |:------- |:----- |:---------------- |
