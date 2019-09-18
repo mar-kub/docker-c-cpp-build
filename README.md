@@ -3,22 +3,32 @@
 Docker image (C / C++)
 
 ## Builds
-gcc4: [![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?branch=gcc4)](https://travis-ci.org/mar-kub/docker-c-cpp-build)<br />
 
-# Contains #
+[![Build Status](https://travis-ci.org/mar-kub/docker-c-cpp-build.svg?branch=master)](https://travis-ci.org/mar-kub/docker-c-cpp-build)<br />
 
-## gcc8 ##
+| Tag    | GCC/G++ | CMAKE | OS               |
+|:------ |:------- |:----- |:---------------- |
+| latest | v8      | 3.13+ | Debian (buster)  |
+| min    | v8      | 3.13+ | Debian (buster)  |
+| gcc8   | v8      | 3.13+ | Debian (buster)  |
+| min8   | v8      | 3.13+ | Debian (buster)  |
+| gcc6   | v6      | 3.7+  | Debian (stretch) |
+| min6   | v6      | 3.7+  | Debian (stretch) |
+| gcc4   | v4      | 3.0+  | Debian (jessie)  |
+| min4   | v4      | 3.0+  | Debian (jessie)  |
 
--   gcc8
--   g++8
+## Additional Tools
+
 -   git
--   cmake (3.13)
 -   mlocate
 -   unzip
 -   ruby
 -   wget
 
-libs
+## Libs
+
+Only the `gccX` and `latest` builds contain the following libs.
+
 -   boost
 -   ATLAS
 -   BLAS
@@ -30,6 +40,7 @@ libs
 -   google-glog
 -   LAPACK
 -   libLAS
+-   GLUT
 -   PCL
 -   proj.4
 -   protobuf
